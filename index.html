@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>Kian's Hangman</title>
+</head>
+<body>
+    <h1>Hangman</h1>
+    <br><br>
+    <div id="winOrLose"></div>
+    <div id="select">
+        <br><br><br>
+        <h2>Select your category:</h2>
+        <select id="category" onchange="onChange()">
+            <option>--Select--</option>
+            <option value ="0">U.S. Presidents</option>
+            <option value ="1">Famous 80's songs</option>
+            <option value ="2">American Holidays</option>
+            <option value ="3">European Soccer Teams</option>
+            <option value ="4">Oscar-Winning Movies</option>
+        </select>
+    </div>
+    <br><br><br>
+    <div id="buttons"></div>
+    <div id="hidden"><table id="table">
+        <tr class="table-primary">
+            <td class="table-primary"><div id="correctLetters"></div></td>
+        </tr>
+        <tr class="table-success">
+            <td class="table-success">Wins:<div id="wins"></div></td>
+            <td class="table-success">Guesses Left: <div id="guesses"></div></td>
+        </tr>
+    </table>
+    </div>
+    <div id="image"></div>
+    <br><br><br><br><br><br><br><br>
+    <button id="reset" onclick="window.location.reload()">Select to Reset entire Game</button>
+
+<div id="correctWord"></div>
+
+</body>
+</html>
